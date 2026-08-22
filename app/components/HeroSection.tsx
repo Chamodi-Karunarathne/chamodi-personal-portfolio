@@ -43,6 +43,11 @@ export default function HeroSection() {
           <p className="mb-8" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '600px', lineHeight: 1.8 }}>
             I'm a Software Engineering Intern specializing in full-stack engineering and digital experiences that embody elegance, robust logic, and intention.
           </p>
+          <div className="flex gap-6 mt-8">
+            <a href="#projects" className="glow-button-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', borderRadius: '9999px' }}>
+              View My Work <span>&rarr;</span>
+            </a>
+          </div>
         </div>
 
         {/* Right Column: Image with Gold Triangle */}

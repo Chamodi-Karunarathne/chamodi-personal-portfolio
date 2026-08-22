@@ -47,7 +47,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="section container">
+    <section id="projects" className="section container">
       <h2 className="section-title">Selected Works</h2>
       <div className="grid grid-cols-2 gap-8">
         {projects.map((project, index) => (
