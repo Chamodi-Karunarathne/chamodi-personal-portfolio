@@ -191,3 +191,34 @@ a {
   color: var(--gold);
   border-color: var(--gold);
 }
+
+/* Header Styles */
+.nav-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--gold);
+}
+
+.pill-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.pill-button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}

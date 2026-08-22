@@ -23,25 +23,37 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Column: Image with Gold Circle */}
-        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+        {/* Right Column: Image with Gold Triangle */}
+        <div style={{ position: 'relative', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
           
+          {/* Decorative Gold Triangle Behind */}
+          <div style={{
+            position: 'absolute',
+            width: '380px',
+            height: '420px',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%) rotate(-7.5deg)',
+            zIndex: 0,
+            opacity: 0.7
+          }}>
+            <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+              <polygon points="100,0 0,50 100,100" fill="none" stroke="var(--gold)" strokeWidth="1" />
+            </svg>
+          </div>
+
           <div style={{ 
             position: 'relative', 
             width: '400px', 
-            height: '400px', 
-            borderRadius: '50%',
-            overflow: 'hidden',
-            background: 'linear-gradient(135deg, #a59d90ff 0%, #0a0a0a 100%)',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
+            height: '500px', 
             zIndex: 1 
           }}>
             <Image 
-              src="/mypic1.png" 
+              src="/my_pic.png" 
               alt="Chamodi Karunarathne" 
               layout="fill" 
-              objectFit="cover" 
-              objectPosition="center top"
+              objectFit="contain" 
+              objectPosition="center bottom"
               priority
             />
           </div>
