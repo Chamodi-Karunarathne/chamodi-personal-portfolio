@@ -24,55 +24,28 @@ export default function HeroSection() {
         </div>
 
         {/* Right Column: Image with Gold Circle */}
-        <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
           
-          {/* Decorative Gold Circle Behind */}
-          <div style={{
-            position: 'absolute',
-            width: '300px',
-            height: '300px',
-            backgroundColor: 'var(--gold-dark)', // using a darker gold/bronze for the solid circle
-            borderRadius: '50%',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 0,
-            opacity: 0.8
-          }}></div>
-
-          {/* The Actual Image */}
           <div style={{ 
             position: 'relative', 
-            width: '100%', 
-            maxWidth: '350px', 
-            aspectRatio: '3/4', // keeping a portrait aspect ratio
+            width: '400px', 
+            height: '400px', 
+            borderRadius: '50%',
+            overflow: 'hidden',
+            background: 'linear-gradient(135deg, #a59d90ff 0%, #0a0a0a 100%)',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
             zIndex: 1 
           }}>
             <Image 
-              src="/mypic.png" 
+              src="/mypic1.png" 
               alt="Chamodi Karunarathne" 
               layout="fill" 
-              objectFit="contain" // contain prevents cropping and excessive upscaling, preserving original resolution
-              objectPosition="center bottom"
+              objectFit="cover" 
+              objectPosition="center top"
               priority
             />
           </div>
-          
-          {/* Optional decorative text floating near the image */}
-          <div style={{
-            position: 'absolute',
-            bottom: '10%',
-            right: '-10%',
-            fontFamily: 'var(--font-heading)',
-            fontSize: '3rem',
-            color: 'var(--gold)',
-            fontStyle: 'italic',
-            lineHeight: 0.8,
-            zIndex: 2,
-            opacity: 0.8,
-            transform: 'rotate(-5deg)'
-          }}>
-          </div>
+
         </div>
 
       </div>
