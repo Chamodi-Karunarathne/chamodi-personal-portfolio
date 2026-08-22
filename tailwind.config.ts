@@ -9,12 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        themeBg: "#070a13",
-        themeText: "#f0f2f5",
-        themeSecondary: "#8c9baf",
-        themeCopper: "#d49a7a",
-        themeCopperDark: "#c17a58",
-        themeYellow: "#e5c07b", // Yellowish copper/gold for PCB routes
+        themeBg: "#0a0a0a",
+        themeText: "#e3d8c8",
+        themeSecondary: "#a89f91",
+        themeGold: "#c5a173",
+        themeGoldDark: "#9c7e57",
+        themeCharcoal: "#161616",
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
     },
   },

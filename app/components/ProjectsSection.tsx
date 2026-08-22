@@ -48,25 +48,27 @@ export default function ProjectsSection() {
 
   return (
     <section className="section container">
-      <h2 className="section-title">04. Featured Projects</h2>
+      <h2 className="section-title">Selected Works</h2>
       <div className="grid grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="glass-card flex flex-col justify-between">
             <div>
-              <div className="flex justify-between items-center mb-2" style={{ flexWrap: 'wrap' }}>
-                <h3 className="text-xl text-purple font-bold">{project.title}</h3>
-                <span className="text-cyan text-sm">{project.duration}</span>
+              <div className="flex justify-between items-start mb-2" style={{ flexWrap: 'wrap' }}>
+                <h3 className="text-xl text-primary font-bold" style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', maxWidth: '70%' }}>{project.title}</h3>
+                <span className="text-gold text-sm" style={{ letterSpacing: '0.1em' }}>{project.duration}</span>
               </div>
-              <p className="text-sm font-bold mb-4" style={{ color: 'var(--text-secondary)' }}>{project.role}</p>
+              <p className="text-sm font-bold mb-4" style={{ color: 'var(--gold)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{project.role}</p>
               
-              <ul className="text-sm mb-6 flex flex-col gap-2" style={{ listStyle: 'none', color: 'var(--text-secondary)' }}>
+              <ul className="text-sm mb-6 flex flex-col gap-3" style={{ listStyle: 'none', color: 'var(--text-secondary)' }}>
                 {project.description.map((desc, i) => (
-                  <li key={i}>&gt; {desc}</li>
+                  <li key={i} style={{ display: 'flex', gap: '0.5rem' }}>
+                    <span style={{ color: 'var(--gold)' }}>—</span> {desc}
+                  </li>
                 ))}
               </ul>
             </div>
             
-            <div className="flex gap-2" style={{ flexWrap: 'wrap' }}>
+            <div className="flex gap-2 mt-4" style={{ flexWrap: 'wrap', borderTop: '1px solid var(--border-subtle)', paddingTop: '1.5rem' }}>
               {project.stack.map((tech, i) => (
                 <span key={i} className="tech-badge">{tech}</span>
               ))}
