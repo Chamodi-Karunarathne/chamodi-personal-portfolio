@@ -35,7 +35,7 @@ export default function Header() {
 
         {/* Action Button */}
         <div>
-          <a href="#" className="pill-button">
+          <a href="/Chamodi_Karunarathne_CV.pdf" download="Chamodi_Karunarathne_CV.pdf" className="pill-button">
             DOWNLOAD MY CV <span style={{ fontSize: '1.2rem', lineHeight: 0 }}>+</span>
           </a>
         </div>

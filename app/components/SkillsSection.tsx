@@ -23,8 +23,8 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="section container">
-      <h2 className="section-title">Expertise</h2>
+    <section id="skills" className="section container" style={{ paddingTop: '3rem' }}>
+      <h2 className="section-title">My Skills</h2>
       <div className="flex justify-between" style={{ borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)', padding: '3rem 0' }}>
         {skillCategories.map((category, index) => (
           <div key={index} style={{ borderRight: index !== skillCategories.length - 1 ? '1px solid var(--border-subtle)' : 'none', padding: '0 2rem', flex: 1, textAlign: 'center' }}>

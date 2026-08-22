@@ -25,7 +25,7 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="about" className="section container" style={{ paddingTop: 0 }}>
+    <section ref={sectionRef} id="about" className="section container" style={{ paddingTop: 0, paddingBottom: '3rem' }}>
       <div className="grid grid-cols-2 gap-8" style={{ border: '1px solid var(--border-subtle)', padding: '3rem' }}>
         <div>
           <h2 className="text-xl text-gold mb-6" style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem' }}>About Me</h2>
