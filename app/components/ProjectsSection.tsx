@@ -16,7 +16,7 @@ const ImageSlider = ({ images, title }: { images: string[], title: string }) => 
   }, [images.length]);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '220px', marginBottom: '2rem', borderRadius: '4px', overflow: 'hidden', border: '1px solid var(--border-subtle)' }}>
+    <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '1.5rem', borderRadius: '4px', overflow: 'hidden', border: '1px solid var(--border-subtle)' }}>
       {images.map((src, idx) => (
         <img 
           key={idx} 
@@ -48,8 +48,7 @@ export default function ProjectsSection() {
       role: "Full-Stack Software Developer",
       duration: "11/2025 – Present",
       description: [
-        "Built an enterprise-grade asset management platform with real-time data synchronization, automated PDF reporting, and secure role-based access control.",
-        "Improved overall system maintainability by refactoring monolithic components into modular architectures within an Agile collaboration environment."
+        "Scalable enterprise asset registry featuring real-time synchronization, automated PDF generation, and secure role-based access, built with a refactored, modular architecture in an Agile environment."
       ],
       stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Drizzle ORM"],
       images: ["/ITAMS.png"]
@@ -59,9 +58,7 @@ export default function ProjectsSection() {
       role: "PCB Designer & Frontend Developer",
       duration: "12/2024 – 08/2025",
       description: [
-        "Designed a custom EasyEDA PCB for an ESP32-based environmental monitoring drone, integrating sensors and communication modules.",
-        "Developed a responsive React dashboard with Firebase Realtime Database integration for real-time environmental and flight telemetry monitoring.",
-        "Built interactive data visualizations for weather parameters, GPS, altitude, air quality, and flight status."
+        "Integrated hardware and software for an environmental drone by designing a custom sensor PCB and building a real-time telemetry dashboard with interactive data visualization."
       ],
       stack: ["React", "TypeScript", "Tailwind CSS", "Firebase", "Recharts", "ESP32", "EasyEDA"],
       images: ["/skyforge.png", "/skyforge1.jpeg"]
@@ -71,9 +68,7 @@ export default function ProjectsSection() {
       role: "Software Developer",
       duration: "10/2023 – 04/2024",
       description: [
-        "Developed a Java-based desktop pet adoption management system using Swing and AWT event handling.",
-        "Implemented role-based authentication, MySQL integration, and CRUD operations including report generation using JDBC.",
-        "Built user-friendly interfaces with search, reporting, file handling, PDF generation, and i18n support."
+        "Desktop management system featuring secure authentication, end-to-end CRUD operations, automated PDF reporting, and multi-language support built with an intuitive user interface."
       ],
       stack: ["Java", "Swing", "AWT", "MySQL", "JDBC", "i18n", "File I/O"],
       images: ["/woof.png"]
@@ -83,9 +78,7 @@ export default function ProjectsSection() {
       role: "Full-Stack Developer",
       duration: "09/2025 – 11/2025",
       description: [
-        "Developed a PHP and MySQL-based blogging platform with secure authentication, role-based access, and blog management features.",
-        "Built responsive user interfaces and implemented CRUD operations, user profiles, image uploads, and interactive post functionalities.",
-        "Designed and optimized a relational database structure for efficient user and content management."
+        "Full-featured content publishing platform with secure role-based authorization, interactive post management, media upload handling, and an optimized relational database architecture."
       ],
       stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "XAMPP"],
       images: ["/blogcave.png"]
@@ -128,15 +121,15 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" ref={containerRef} style={{ height: '350vh', position: 'relative' }}>
-      <div style={{ position: 'sticky', top: '80px', height: 'calc(100vh - 80px)', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-        <div className="container" style={{ marginBottom: '3rem' }}>
+      <div style={{ position: 'sticky', top: '80px', height: 'calc(100vh - 80px)', overflow: 'hidden', display: 'flex', flexDirection: 'column', paddingTop: '2rem' }}>
+        <div className="container" style={{ marginBottom: '1.5rem' }}>
           <h2 className="section-title" style={{ justifyContent: 'flex-start' }}>Selected Works</h2>
         </div>
         
         <div style={{ paddingLeft: 'max(2rem, calc((100vw - 1200px) / 2))' }}>
           <div ref={trackRef} className="flex gap-8" style={{ width: 'max-content', paddingRight: 'max(2rem, calc((100vw - 1200px) / 2))', willChange: 'transform' }}>
             {projects.map((project, index) => (
-              <div key={index} className="glass-card flex flex-col justify-between" style={{ width: '80vw', maxWidth: '650px', flexShrink: 0 }}>
+              <div key={index} className="glass-card flex flex-col justify-between" style={{ width: '80vw', maxWidth: '650px', flexShrink: 0, padding: '2rem', maxHeight: 'calc(100vh - 180px)', overflowY: 'auto' }}>
                 <div>
                   {/* Image Slider */}
                   <ImageSlider images={project.images} title={project.title} />
