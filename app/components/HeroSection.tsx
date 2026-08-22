@@ -40,17 +40,13 @@ export default function HeroSection() {
             <span style={{ display: 'block', color: 'var(--text-primary)' }}>Chamodi</span>
             <span style={{ display: 'block', color: 'var(--gold)', fontStyle: 'italic' }}>Karunarathne</span>
           </h1>
-          <p className="mb-8" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '400px', lineHeight: 1.8 }}>
+          <p className="mb-8" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '600px', lineHeight: 1.8 }}>
             I'm a Software Engineering Intern specializing in full-stack engineering and digital experiences that embody elegance, robust logic, and intention.
           </p>
-          <div className="flex gap-6">
-            <a href="mailto:chamokarunarathne27@gmail.com" className="glow-button">Contact Me</a>
-            <a href="https://github.com/Chamodi-Karunarathne" target="_blank" rel="noreferrer" className="glow-button-outline">GitHub</a>
-          </div>
         </div>
 
         {/* Right Column: Image with Gold Triangle */}
-        <div style={{ position: 'relative', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+        <div style={{ position: 'relative', display: 'flex', justifyContent: 'flex-end', alignItems: 'center', transform: 'translateX(20px)' }}>
           
           {/* Decorative Gold Triangle Behind */}
           <div style={{
