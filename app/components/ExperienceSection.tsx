@@ -1,6 +1,6 @@
 export default function ExperienceSection() {
   return (
-    <section className="section container">
+    <section id="work" className="section container">
       <h2 className="section-title">Professional Trajectory</h2>
       
       <div className="grid grid-cols-2 gap-8">

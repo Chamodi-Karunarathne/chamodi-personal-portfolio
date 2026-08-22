@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="section container">
+    <section id="about" className="section container">
       <div className="grid grid-cols-2 gap-8" style={{ border: '1px solid var(--border-subtle)', padding: '3rem' }}>
         <div>
           <h2 className="text-xl text-gold mb-6" style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem' }}>About Me</h2>

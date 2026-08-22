@@ -28,7 +28,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+    <section id="home" className="section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
       <div className="container grid grid-cols-2 items-center gap-12" style={{ width: '100%', zIndex: 1 }}>
         
         {/* Left Column: Text */}

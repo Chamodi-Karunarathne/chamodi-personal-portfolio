@@ -24,12 +24,13 @@ export default function Header() {
         </div>
 
         {/* Navigation Links */}
-        <nav style={{ display: 'flex', gap: '2.5rem' }}>
+        <nav style={{ display: 'flex', gap: '1.5rem' }}>
           <a href="#home" className="nav-link active">HOME</a>
           <a href="#about" className="nav-link">ABOUT</a>
-          <a href="#work" className="nav-link">WORK</a>
-          <a href="#experience" className="nav-link">EXPERIENCE</a>
-          <a href="#contact" className="nav-link">CONTACT</a>
+          <a href="#skills" className="nav-link">SKILLS</a>
+
+          <a href="#certifications" className="nav-link">CERTIFICATIONS</a>
+          <a href="#contacts" className="nav-link">CONTACTS</a>
         </nav>
 
         {/* Action Button */}
