@@ -1,6 +1,32 @@
+"use client";
+
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
+  const finalPhrase = "Decoding Complexity. Curating Creativity.";
+  const [displayText, setDisplayText] = useState(finalPhrase);
+
+  useEffect(() => {
+    let iteration = 0;
+    const interval = setInterval(() => {
+      setDisplayText(
+        finalPhrase
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return finalPhrase[index];
+            }
+            return Math.random() < 0.5 ? "0" : "1";
+          })
+          .join("")
+      );
+      if (iteration >= finalPhrase.length) clearInterval(interval);
+      iteration += 1 / 2;
+    }, 35);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
       <div className="container grid grid-cols-2 items-center gap-12" style={{ width: '100%', zIndex: 1 }}>
@@ -8,7 +34,7 @@ export default function HeroSection() {
         {/* Left Column: Text */}
         <div style={{ maxWidth: '600px', zIndex: 2 }}>
           <h2 className="text-gold mb-4" style={{ fontFamily: 'var(--font-body)', letterSpacing: '0.2em', fontSize: '0.8rem', textTransform: 'uppercase' }}>
-            Elevating Ideas. Crafting Prestige.
+            {displayText}
           </h2>
           <h1 style={{ fontSize: '5rem', lineHeight: '0.9', marginBottom: '2rem', textTransform: 'uppercase' }}>
             <span style={{ display: 'block', color: 'var(--text-primary)' }}>Chamodi</span>
