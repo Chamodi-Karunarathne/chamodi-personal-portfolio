@@ -15,7 +15,7 @@ export default function Home() {
       
       <footer className="container" style={{ padding: '2rem 0', textAlign: 'center', borderTop: '1px solid var(--glass-border)', marginTop: '4rem' }}>
         <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-          © {new Date().getFullYear()} Chamodi Karunarathne. Designed & Built with ❤️ and ☕.
+          © {new Date().getFullYear()} Chamodi Karunarathne. Designed & Built with love and coffee.
         </p>
       </footer>
     </main>

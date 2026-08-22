@@ -30,7 +30,7 @@ export default function HeroSection() {
             borderRadius: '50%',
             padding: '10px',
             background: 'linear-gradient(45deg, var(--neon-cyan), var(--neon-purple))',
-            boxShadow: '0 0 30px rgba(0, 243, 255, 0.4), inset 0 0 20px rgba(176, 38, 255, 0.4)'
+            boxShadow: '0 0 30px rgba(212, 154, 122, 0.4), inset 0 0 20px rgba(193, 122, 88, 0.4)'
           }}>
             <div style={{
               width: '100%',
