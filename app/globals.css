@@ -23,10 +23,6 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
-  background-image: 
-    linear-gradient(rgba(212, 154, 122, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 154, 122, 0.05) 1px, transparent 1px);
-  background-size: 30px 30px;
   background-position: center center;
 }
 
