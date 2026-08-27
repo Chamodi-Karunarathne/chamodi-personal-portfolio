@@ -1,64 +1,33 @@
-"use client";
-
-import { useEffect, useRef, useState } from 'react';
-
 export default function AboutSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section ref={sectionRef} id="about" className="section container" style={{ paddingTop: 0, paddingBottom: '3rem' }}>
-      <div className="grid grid-cols-2 gap-8" style={{ border: '1px solid var(--border-subtle)', padding: '3rem' }}>
+    <section className="sec" id="about" data-section="A Note on Method">
+      <div className="folio">
+        <span className="label label--accent">P. 01</span>
+        <h2 className="folio__t">A note on <em>method</em></h2>
+        <span className="label" style={{ color: 'var(--ink-40)' }}>Essay</span>
+      </div>
+
+      <div className="feature">
+        <aside className="note rv">
+          <b>At a glance</b>
+          BSc (Hons) Information Technology &amp; Management, University of Moratuwa. CGPA 3.78 of 4.00. Dean&apos;s List, Semester 01. Currently with the electronic team at IES Labs.
+        </aside>
+
         <div>
-          <h2 className="text-xl text-gold mb-6" style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem' }}>About Me</h2>
-          <p className="mb-6 text-sm" style={{ color: 'var(--text-secondary)' }}>
-            Information Technology and Management undergraduate at the University of Moratuwa, focused on full-stack engineering and systems design using Java, Next.js, React.
-          </p>
-          <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-            With a refined eye for detail and a passion for building robust backend logic, I craft timeless aesthetics that elevate brands and leave a lasting impression. Balancing strong academic principles with hands-on experience in requirements engineering and IoT frameworks.
-          </p>
-
-        </div>
-
-        <div className="flex flex-col justify-center gap-2" style={{ borderLeft: '1px solid var(--border-subtle)', paddingLeft: '3rem' }}>
-          <h2 className={`text-xl text-gold mb-2 ${isVisible ? 'animate-line delay-1' : ''}`} style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', textTransform: 'uppercase', opacity: isVisible ? '' : 0 }}>Education</h2>
-
-          <div className="flex flex-col gap-6">
-            <div className={isVisible ? 'animate-line delay-2' : ''} style={{ opacity: isVisible ? '' : 0 }}>
-              <h3 className="text-xl text-primary mb-2" style={{ fontSize: '1.2rem' }}>G.C.E. Advanced Level</h3>
-              <p className="text-gold text-sm mb-2" style={{ letterSpacing: '0.1em' }}>Devi Balika Vidyalaya, Colombo 08 | 2020 – 2023</p>
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                Commerce Stream (English Medium)<br/>
-                3A passes (Accounting, ICT and English)<br/>
-                1B pass (Economics)
-              </p>
-            </div>
-            <div className={isVisible ? 'animate-line delay-3' : ''} style={{ opacity: isVisible ? '' : 0 }}>
-              <h3 className="text-xl text-primary mb-2" style={{ fontSize: '1.2rem' }}>BSc. (Hons) Information Technology & Management</h3>
-              <p className="text-gold text-sm mb-2" style={{ letterSpacing: '0.1em' }}>Faculty of IT, University of Moratuwa | 2024 – Present</p>
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                CGPA: 3.78 / 4.00<br/>
-                Academic Honors: Dean's List for Semester 01
-              </p>
-            </div>
+          <h3 className="headline rv">Good software is mostly <i>unglamorous</i> decisions, made early.</h3>
+          <div className="cols rv">
+            <p>
+              I build the parts nobody photographs — the schema, the auth layer, the role model — and then make the surface above them feel considered. Most of my work sits at the seam between backend logic and interface, which is also where things tend to break.
+            </p>
+            <p>
+              At <b>IES Labs</b> I work on IoT and embedded systems alongside the electronic team, so a project rarely stops at the API. On Skyforge I designed the sensor PCB in EasyEDA and then wrote the dashboard that read from it — the same data followed end to end, from a trace on a board to a chart in a browser. Knowing what the sensor actually does changes how you write the code that receives it.
+            </p>
+            <p>
+              I also teach. A year instructing at <b>ICTBUS Institute</b> did more for how I write documentation and name variables than any style guide. If a first-year can follow it, a reviewer can too.
+            </p>
+            <p>
+              Right now I&apos;m building an enterprise asset management system with an external client, and looking for a <b>software engineering internship</b> where the hardware and the software are both on the table.
+            </p>
           </div>
         </div>
       </div>

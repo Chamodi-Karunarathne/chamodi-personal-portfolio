@@ -1,37 +1,28 @@
-export default function SkillsSection() {
-  const skillCategories = [
-    {
-      title: "Languages",
-      skills: ["Typescript", "JavaScript", "Java", "C", "C++", "SQL", "Python"]
-    },
-    {
-      title: "Frameworks",
-      skills: ["Next.js", "React", "Node.js", "REST APIs", "Tailwind CSS"]
-    },
-    {
-      title: "Databases",
-      skills: ["MySQL", "PostgreSQL", "Drizzle", "Firebase", "Neon"]
-    },
-    {
-      title: "DevOps",
-      skills: ["Git", "Github", "Docker", "Vercel", "Expo"]
-    },
-    {
-      title: "Hardware",
-      skills: ["ESP32", "Arduino", "PCB Design"]
-    }
-  ];
+const categories = [
+  { num: 'I', name: 'Languages', chips: ['TypeScript', 'JavaScript', 'Java', 'C', 'C++', 'SQL', 'Python'] },
+  { num: 'II', name: 'Frameworks', chips: ['Next.js', 'React', 'Node.js', 'REST APIs', 'Tailwind CSS'] },
+  { num: 'III', name: 'Data', chips: ['PostgreSQL', 'MySQL', 'Drizzle ORM', 'Firebase', 'Neon'] },
+  { num: 'IV', name: 'Operations', chips: ['Git', 'GitHub', 'Docker', 'Vercel', 'Expo'] },
+  { num: 'V', name: 'Hardware', chips: ['ESP32', 'Arduino', 'PCB Design', 'EasyEDA'] },
+];
 
+export default function SkillsSection() {
   return (
-    <section id="skills" className="section container" style={{ paddingTop: '3rem' }}>
-      <h2 className="section-title">My Skills</h2>
-      <div className="flex justify-between" style={{ borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)', padding: '3rem 0' }}>
-        {skillCategories.map((category, index) => (
-          <div key={index} style={{ borderRight: index !== skillCategories.length - 1 ? '1px solid var(--border-subtle)' : 'none', padding: '0 2rem', flex: 1, textAlign: 'center' }}>
-            <h3 className="text-gold mb-4" style={{ fontSize: '0.85rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>{category.title}</h3>
-            <div className="flex flex-col gap-2 items-center">
-              {category.skills.map((skill, idx) => (
-                <span key={idx} style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{skill}</span>
+    <section className="sec" id="practice" data-section="Index of Practice">
+      <div className="folio">
+        <span className="label label--accent">P. 02</span>
+        <h2 className="folio__t">Index of <em>practice</em></h2>
+        <span className="label" style={{ color: 'var(--ink-40)' }}>Five parts</span>
+      </div>
+
+      <div className="practice rv">
+        {categories.map((cat) => (
+          <div className="practice__row" key={cat.num}>
+            <span className="practice__num">{cat.num}</span>
+            <h3 className="practice__cat">{cat.name}</h3>
+            <div className="chips">
+              {cat.chips.map((chip) => (
+                <span className="chip" key={chip}>{chip}</span>
               ))}
             </div>
           </div>
