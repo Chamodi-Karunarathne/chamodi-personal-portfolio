@@ -34,7 +34,7 @@ export default function CoverSection() {
             <span className="p">P. 04</span>
           </a>
           <a href="#contact">
-            <span className="t">Commissions</span>
+            <span className="t">Contact</span>
             <span className="p">P. 05</span>
           </a>
         </nav>
