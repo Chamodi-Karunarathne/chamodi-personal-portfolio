@@ -228,9 +228,9 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
 /* ============================================================
    FEATURE / ABOUT
    ============================================================ */
-.feature{display:grid;grid-template-columns:2.2fr 7.8fr;gap:clamp(24px,4vw,var(--s9))}
+.feature{display:grid;grid-template-columns:3fr 7fr;gap:clamp(24px,4vw,var(--s9))}
 .note{
-  font-family:var(--f-label);font-weight:400;font-size:.78rem;line-height:1.62;
+  font-family:var(--f-label);font-weight:400;font-size:var(--t-caption);line-height:1.62;
   color:var(--ink-70);letter-spacing:.02em;border-top:1px solid var(--ink);
   padding-top:var(--s3);
 }

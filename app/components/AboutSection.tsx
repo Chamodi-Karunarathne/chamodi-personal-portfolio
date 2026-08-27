@@ -10,23 +10,23 @@ export default function AboutSection() {
       <div className="feature">
         <aside className="note rv">
           <b>At a glance</b>
-          BSc (Hons) Information Technology &amp; Management, University of Moratuwa. CGPA 3.78 of 4.00. Dean&apos;s List, Semester 01. Currently with the electronic team at IES Labs.
+          BSc. (Hons) Information Technology &amp; Management<br />
+          Faculty of IT, University of Moratuwa<br />
+          <i>&bull; CGPA: 3.78 / 4.00</i><br />
+          <i>&bull; Academic Honors: Included in the Dean&apos;s List for Semester 01</i>
+          <br /><br />
+          G.C.E. Advanced Level, Devi Balika Vidyalaya, Colombo 08<br />
+          <i>&bull; 2022(2023) - Commerce Stream (English Medium)</i>
         </aside>
 
         <div>
-          <h3 className="headline rv">Good software is mostly <i>unglamorous</i> decisions, made early.</h3>
+          <h3 className="headline rv">I'm Chamodi , I decode complexity, curate <i>creativity</i>.</h3>
           <div className="cols rv">
             <p>
-              I build the parts nobody photographs — the schema, the auth layer, the role model — and then make the surface above them feel considered. Most of my work sits at the seam between backend logic and interface, which is also where things tend to break.
+              I bridge robust technical systems with fluid digital design. By combining core languages like <b>TypeScript</b>, <b>Java</b>, and <b>Next.js</b> with structured systems architecture, I simplify complex data handling&mdash;from relational schemas and role-based auth layers down to hardware-software integration.
             </p>
             <p>
-              At <b>IES Labs</b> I work on IoT and embedded systems alongside the electronic team, so a project rarely stops at the API. On Skyforge I designed the sensor PCB in EasyEDA and then wrote the dashboard that read from it — the same data followed end to end, from a trace on a board to a chart in a browser. Knowing what the sensor actually does changes how you write the code that receives it.
-            </p>
-            <p>
-              I also teach. A year instructing at <b>ICTBUS Institute</b> did more for how I write documentation and name variables than any style guide. If a first-year can follow it, a reviewer can too.
-            </p>
-            <p>
-              Right now I&apos;m building an enterprise asset management system with an external client, and looking for a <b>software engineering internship</b> where the hardware and the software are both on the table.
+              Whether building <b>scalable enterprise platforms</b> or <b>transforming hardware data into intuitive web dashboards</b>, I focus on clean execution and high-end UI/UX prototyping to turn intricate technical challenges into engaging, user-focused digital products.
             </p>
           </div>
         </div>
