@@ -8,7 +8,7 @@ const works = [
     meta: [
       { dt: 'Period', dd: '11/2025 — Present' },
       { dt: 'Role', dd: 'Full-Stack Developer' },
-      { dt: 'Context', dd: 'External client · Agile' },
+      { dt: 'Architecture', dd: 'Modular System' },
     ],
     chips: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'PostgreSQL', 'Drizzle'],
     figures: [{ src: '/ITAMS.png', alt: 'EITAMS dashboard interface', fb: 'Plate 01 — image not loaded' }],
@@ -24,15 +24,14 @@ const works = [
     meta: [
       { dt: 'Period', dd: '12/2024 — 08/2025' },
       { dt: 'Role', dd: 'PCB Designer · Frontend' },
-      { dt: 'Context', dd: 'IES Labs' },
+      { dt: 'Architecture', dd: 'Hardware & UI' },
     ],
     chips: ['React', 'TypeScript', 'Firebase', 'Recharts', 'ESP32', 'EasyEDA'],
     figures: [
-      { src: '/skyforge.png', alt: 'Skyforge telemetry dashboard', fb: 'Plate 02.a' },
-      { src: '/skyforge1.jpeg', alt: 'Skyforge drone and sensor board', fb: 'Plate 02.b' },
+      { src: '/skyforge1.jpeg', alt: 'Skyforge drone and sensor board', fb: 'Plate 02 — image not loaded' },
     ],
-    caption: null,
-    twoUp: true,
+    caption: 'Plate 02 — Skyforge drone and sensor board',
+    twoUp: false,
   },
   {
     id: 'w3',
@@ -43,7 +42,7 @@ const works = [
     meta: [
       { dt: 'Period', dd: '09/2025 — 11/2025' },
       { dt: 'Role', dd: 'Full-Stack Developer' },
-      { dt: 'Context', dd: 'Coursework' },
+      { dt: 'Architecture', dd: 'Relational CRUD' },
     ],
     chips: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS', 'XAMPP'],
     figures: [{ src: '/blogcave.png', alt: 'BlogCave publishing interface', fb: 'Plate 03 — image not loaded' }],
@@ -59,7 +58,7 @@ const works = [
     meta: [
       { dt: 'Period', dd: '10/2023 — 04/2024' },
       { dt: 'Role', dd: 'Software Developer' },
-      { dt: 'Context', dd: 'Java desktop' },
+      { dt: 'Architecture', dd: 'Desktop & i18n' },
     ],
     chips: ['Java', 'Swing', 'AWT', 'MySQL', 'JDBC', 'i18n'],
     figures: [{ src: '/woof.png', alt: 'Woof pet adoption desktop application', fb: 'Plate 04 — image not loaded' }],

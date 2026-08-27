@@ -8,26 +8,10 @@ export default function ExperienceSection() {
       </div>
 
       <div className="traj">
-        {/* Left column — Experience & Education */}
+        {/* Left column — Education */}
         <div className="rv">
           <div className="blk">
-            <h3 className="blk__h">Experience &amp; education</h3>
-
-            <div className="entry">
-              <div>
-                <h4>Software Developer</h4>
-                <p>IoT &amp; Embedded Systems Labs — Electronic Team</p>
-              </div>
-              <span className="when">09/2025 —</span>
-            </div>
-
-            <div className="entry">
-              <div>
-                <h4>Academic Instructor</h4>
-                <p>ICTBUS Institute</p>
-              </div>
-              <span className="when">01/2025 — 01/2026</span>
-            </div>
+            <h3 className="blk__h">Education</h3>
 
             <div className="entry">
               <div>
@@ -45,12 +29,9 @@ export default function ExperienceSection() {
               <span className="when">2020 — 2023</span>
             </div>
           </div>
-        </div>
 
-        {/* Right column — Certifications & Community */}
-        <div className="rv">
           <div className="blk">
-            <h3 className="blk__h">Certification</h3>
+            <h3 className="blk__h">Certifications</h3>
             <ul className="mini">
               <li>
                 <span className="mk">✦</span>
@@ -68,33 +49,36 @@ export default function ExperienceSection() {
               </li>
             </ul>
           </div>
+        </div>
 
+        {/* Right column — Community & Leadership */}
+        <div className="rv">
           <div className="blk">
             <h3 className="blk__h">Community &amp; leadership</h3>
             <ul className="mini">
               <li>
-                <span className="mk">—</span>
+                <span className="mk">✦</span>
                 <div>
                   <strong>Hackelite 2.0 · Finance Lead</strong>
                   <span>IEEE WIE Student Branch Affinity Group, UoM</span>
                 </div>
               </li>
               <li>
-                <span className="mk">—</span>
+                <span className="mk">✦</span>
                 <div>
                   <strong>AGM 2025 · Logistics Lead</strong>
                   <span>IEEE Professional Communication Society</span>
                 </div>
               </li>
               <li>
-                <span className="mk">—</span>
+                <span className="mk">✦</span>
                 <div>
                   <strong>Road to Legacy 2.0 · Programme Committee</strong>
                   <span>IEEE, University of Sri Jayewardenepura</span>
                 </div>
               </li>
               <li>
-                <span className="mk">—</span>
+                <span className="mk">✦</span>
                 <div>
                   <strong>Binara Padura 2.0 · Finance Committee</strong>
                   <span>Rotaract Club, University of Moratuwa</span>

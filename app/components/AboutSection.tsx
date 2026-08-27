@@ -16,11 +16,13 @@ export default function AboutSection() {
           <i>&bull; Academic Honors: Included in the Dean&apos;s List for Semester 01</i>
           <br /><br />
           G.C.E. Advanced Level, Devi Balika Vidyalaya, Colombo 08<br />
-          <i>&bull; 2022(2023) - Commerce Stream (English Medium)</i>
+          <i>&bull; 2022(2023) - Commerce Stream (English Medium)</i><br />
+          <i>&bull;3A passes (Accounting, ICT and English)</i><br />
+<i>&bull;1B pass (Economics)</i>
         </aside>
 
         <div>
-          <h3 className="headline rv">I'm Chamodi , I decode complexity, curate <i>creativity</i>.</h3>
+          <h3 className="headline rv">"I'm Chamodi , I decode complexity and curate <i>creativity</i>."</h3>
           <div className="cols rv">
             <p>
               I bridge robust technical systems with fluid digital design. By combining core languages like <b>TypeScript</b>, <b>Java</b>, and <b>Next.js</b> with structured systems architecture, I simplify complex data handling&mdash;from relational schemas and role-based auth layers down to hardware-software integration.

@@ -47,7 +47,7 @@ export default function CoverSection() {
         <div className="cover__aside">
           <div>
             <p className="deck">
-              I'm a Software Engineering Intern specializing in full-stack engineering and <i>digital experiences </i>that embody elegance, robust logic, and intention.
+              "I'm a Software Engineering Intern specializing in full-stack engineering and <i>digital experiences </i>that embody elegance, robust logic, and intention."
             </p>
             <p className="sub">
               A second-year Information Technology & Management undergraduate at the University of Moratuwa.
