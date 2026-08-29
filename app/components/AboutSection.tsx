@@ -1,9 +1,9 @@
 export default function AboutSection() {
   return (
-    <section className="sec" id="about" data-section="A Note on Method">
+    <section className="sec" id="about" data-section="About me">
       <div className="folio">
         <span className="label label--accent">P. 01</span>
-        <h2 className="folio__t">A note on <em>method</em></h2>
+        <h2 className="folio__t">About <em>me</em></h2>
         <span className="label" style={{ color: 'var(--ink-40)' }}>Essay</span>
       </div>
 

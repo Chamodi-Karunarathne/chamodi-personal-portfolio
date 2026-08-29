@@ -215,7 +215,7 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
 }
 .cover__aside .deck i{font-style:italic;color:var(--accent)}
 .cover__aside .sub{color:var(--ink-70);font-size:.9375rem;line-height:1.72;margin-bottom:var(--s6)}
-.acts{display:flex;flex-direction:column;gap:var(--s3);align-items:flex-start}
+.acts{display:flex;flex-direction:row;gap:var(--s3);align-items:center;flex-wrap:wrap}
 .btn{
   font-family:var(--f-label);font-weight:500;font-size:var(--t-micro);
   letter-spacing:var(--tr-micro);text-transform:uppercase;text-decoration:none;
@@ -224,6 +224,13 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
   transition:border-color 280ms var(--ease),color 280ms var(--ease),gap 280ms var(--ease);
 }
 .btn:hover{color:var(--accent);border-bottom-color:var(--accent);gap:18px}
+.icon-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border-radius:50%;
+  border:1px solid var(--ink);color:var(--ink);
+  transition:border-color 280ms var(--ease),color 280ms var(--ease),transform 280ms var(--ease),background 280ms var(--ease);
+}
+.icon-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-soft);transform:translateY(-2px)}
 
 /* ============================================================
    FEATURE / ABOUT

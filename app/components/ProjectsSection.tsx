@@ -76,10 +76,10 @@ const contentsData = [
 
 export default function ProjectsSection() {
   return (
-    <section className="sec" id="works" data-section="Selected Works">
+    <section className="sec" id="works" data-section="Selected projects">
       <div className="folio">
         <span className="label label--accent">P. 03</span>
-        <h2 className="folio__t">Selected <em>works</em></h2>
+        <h2 className="folio__t">Selected <em>projects</em></h2>
         <span className="label" style={{ color: 'var(--ink-40)' }}>2023 — Present</span>
       </div>
 

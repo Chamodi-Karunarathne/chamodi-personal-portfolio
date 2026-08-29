@@ -8,10 +8,10 @@ const categories = [
 
 export default function SkillsSection() {
   return (
-    <section className="sec" id="practice" data-section="Index of Practice">
+    <section className="sec" id="practice" data-section="Skills">
       <div className="folio">
         <span className="label label--accent">P. 02</span>
-        <h2 className="folio__t">Index of <em>practice</em></h2>
+        <h2 className="folio__t">Skills</h2>
         <span className="label" style={{ color: 'var(--ink-40)' }}>Five parts</span>
       </div>
 
