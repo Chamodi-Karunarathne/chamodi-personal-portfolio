@@ -312,7 +312,7 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
   letter-spacing:var(--tr-micro);text-transform:uppercase;color:var(--ink-40)}
 .meta dd{margin-top:7px;font-size:var(--t-caption);color:var(--ink);font-family:var(--f-label);letter-spacing:.03em}
 .spread__figs{display:grid;gap:var(--s3)}
-.spread__figs .fig{aspect-ratio:4/3}
+.spread__figs .fig{aspect-ratio:16/9}
 .spread__figs.two{grid-template-columns:1.35fr 1fr}
 .spread__figs.two .fig{aspect-ratio:1/1}
 
