@@ -358,7 +358,7 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
   transition:padding-left 300ms var(--ease),background 300ms var(--ease);
 }
 .reach a:hover{padding-left:var(--s3);background:var(--accent-soft)}
-.reach .k{display:block;font-family:var(--f-label);font-weight:500;font-size:var(--t-micro);
+.reach .k{display:flex;align-items:center;gap:6px;font-family:var(--f-label);font-weight:500;font-size:var(--t-micro);
   letter-spacing:var(--tr-micro);text-transform:uppercase;color:var(--ink-40);margin-bottom:10px}
 .reach .v{display:block;font-family:var(--f-display);font-size:1.32rem;line-height:1.2}
 
