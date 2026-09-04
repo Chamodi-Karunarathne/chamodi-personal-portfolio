@@ -40,7 +40,7 @@ export default function CoverSection() {
         </nav>
 
         <figure className="fig cover__portrait">
-          <img src="/me wso2.jpg" alt="Portrait of Chamodi Karunarathne" />
+          <img src="/my-pic.jpg" alt="Portrait of Chamodi Karunarathne" />
           <div className="fig__fb">Portrait — image not loaded</div>
         </figure>
 
