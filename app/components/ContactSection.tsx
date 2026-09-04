@@ -20,7 +20,10 @@ export default function ContactSection() {
             </svg>
             Email
           </span>
-          <span className="v">chamokarunarathne27@gmail.com ↗</span>
+          <span className="v">
+            <span className="v__text">chamokarunarathne27@gmail.com</span>
+            <span className="v__arr">↗</span>
+          </span>
         </a>
 
         <a href="https://github.com/Chamodi-Karunarathne" target="_blank" rel="noopener noreferrer">
@@ -31,7 +34,10 @@ export default function ContactSection() {
             </svg>
             GitHub
           </span>
-          <span className="v">@Chamodi-Karunarathne ↗</span>
+          <span className="v">
+            <span className="v__text">@Chamodi-Karunarathne</span>
+            <span className="v__arr">↗</span>
+          </span>
         </a>
 
         <a href="https://www.linkedin.com/in/chamodikaru" target="_blank" rel="noopener noreferrer">
@@ -43,7 +49,10 @@ export default function ContactSection() {
             </svg>
             LinkedIn
           </span>
-          <span className="v">in/chamodikaru ↗</span>
+          <span className="v">
+            <span className="v__text">in/chamodikaru</span>
+            <span className="v__arr">↗</span>
+          </span>
         </a>
 
         <a href="tel:+94764890904">
@@ -53,7 +62,10 @@ export default function ContactSection() {
             </svg>
             Mobile
           </span>
-          <span className="v">+94 76 489 0904 ↗</span>
+          <span className="v">
+            <span className="v__text">+94 76 489 0904</span>
+            <span className="v__arr">↗</span>
+          </span>
         </a>
 
         <a href="/Chamodi_Karunarathne_CV.pdf" target="_blank" rel="noopener noreferrer">
@@ -65,7 +77,10 @@ export default function ContactSection() {
             </svg>
             Curriculum vitae
           </span>
-          <span className="v">PDF, 2026 ↓</span>
+          <span className="v">
+            <span className="v__text">PDF, 2026</span>
+            <span className="v__arr v__arr--down">↓</span>
+          </span>
         </a>
       </div>
     </section>

@@ -50,7 +50,7 @@ export default function CoverSection() {
               "I'm a Software Engineering Intern specializing in full-stack engineering and <i>digital experiences </i>that embody elegance, robust logic, and intention."
             </p>
             <p className="sub">
-              A second-year Information Technology & Management undergraduate at the University of Moratuwa.
+              A third-year Information Technology & Management undergraduate at the University of Moratuwa.
             </p>
           </div>
           <div className="acts">
