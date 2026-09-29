@@ -4,14 +4,6 @@ import { useEffect } from 'react';
 
 export default function ThemeProvider() {
   useEffect(() => {
-    const root = document.documentElement;
-
-    // --- Theme: respect system preference, in-memory only ---
-    const prefersDark =
-      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initial = prefersDark ? 'midnight' : 'edition';
-    root.setAttribute('data-theme', initial);
-
     // --- Scroll-reveal ---
     const revealItems = document.querySelectorAll('.rv');
     if ('IntersectionObserver' in window) {

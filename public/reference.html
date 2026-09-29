@@ -490,7 +490,7 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
         </div>
         <div class="acts">
           <a class="btn" href="#works">Selected works <span aria-hidden="true">â†’</span></a>
-          <a class="btn" href="https://www.chamodi.dev/Chamodi_Karunarathne_CV.pdf">Curriculum vitae <span aria-hidden="true">â†“</span></a>
+          <a class="btn" href="https://www.chamodi.dev/Chamodi_CV.pdf">Curriculum vitae <span aria-hidden="true">â†“</span></a>
         </div>
       </div>
     </div>
@@ -772,7 +772,7 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
       <a href="mailto:hello@chamodi.dev"><span class="k">Email</span><span class="v">hello@chamodi.dev â†—</span></a>
       <a href="#"><span class="k">GitHub</span><span class="v">@chamodi â†—</span></a>
       <a href="#"><span class="k">LinkedIn</span><span class="v">in/chamodi â†—</span></a>
-      <a href="https://www.chamodi.dev/Chamodi_Karunarathne_CV.pdf"><span class="k">Curriculum vitae</span><span class="v">PDF, 2026 â†“</span></a>
+      <a href="https://www.chamodi.dev/Chamodi_CV.pdf"><span class="k">Curriculum vitae</span><span class="v">PDF, 2026 â†“</span></a>
     </div>
   </section>
 
@@ -806,10 +806,14 @@ html[data-theme="midnight"] .fig:hover img{filter:grayscale(.08) saturate(.88) b
       togLabel=document.getElementById('togLabel'),
       runSection=document.getElementById('runSection');
 
-  /* Theme â€” in-memory only, no browser storage */
-  var theme=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'midnight':'edition';
+  /* Theme â€” light by default, remembered for this session */
+  var theme='edition';
+  try {
+    if(sessionStorage.getItem('portfolio-theme')==='midnight') theme='midnight';
+  } catch(e) {}
   function apply(t){
     theme=t;root.setAttribute('data-theme',t);
+    try { sessionStorage.setItem('portfolio-theme',t); } catch(e) {}
     var next=(t==='edition')?'Midnight':'Edition';
     togLabel.textContent=next;
     tog.setAttribute('aria-label','Switch to '+next+' edition');

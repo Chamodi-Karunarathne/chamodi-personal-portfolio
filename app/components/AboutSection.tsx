@@ -18,7 +18,7 @@ export default function AboutSection() {
           G.C.E. Advanced Level, Devi Balika Vidyalaya, Colombo 08<br />
           <i>&bull; 2022(2023) - Commerce Stream (English Medium)</i><br />
           <i>&bull;3A passes (Accounting, ICT and English)</i><br />
-<i>&bull;1B pass (Economics)</i>
+          <i>&bull;1B pass (Economics)</i>
         </aside>
 
         <div>

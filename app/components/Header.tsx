@@ -11,10 +11,23 @@ export default function Header() {
     const next = current === 'edition' ? 'midnight' : 'edition';
     root.setAttribute('data-theme', next);
     setThemeLabel(next === 'edition' ? 'Midnight' : 'Edition');
+    try {
+      sessionStorage.setItem('portfolio-theme', next);
+    } catch {
+      // Keep the toggle working when browser storage is unavailable.
+    }
   }, []);
 
   useEffect(() => {
-    const current = document.documentElement.getAttribute('data-theme');
+    let current = 'edition';
+    try {
+      if (sessionStorage.getItem('portfolio-theme') === 'midnight') {
+        current = 'midnight';
+      }
+    } catch {
+      // Default to light mode when browser storage is unavailable.
+    }
+    document.documentElement.setAttribute('data-theme', current);
     setThemeLabel(current === 'edition' ? 'Midnight' : 'Edition');
   }, []);
 
