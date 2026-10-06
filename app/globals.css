@@ -31,6 +31,7 @@
 
 /* ---------- EDITION (light) ---------- */
 html[data-theme="edition"]{
+  --portfolio-cursor:url('/cursors/edition.svg') 4 4;
   --paper:#EFEBE2;
   --paper-2:#E6E0D4;
   --paper-3:#DBD4C5;
@@ -47,6 +48,7 @@ html[data-theme="edition"]{
 }
 /* ---------- MIDNIGHT (dark) ---------- */
 html[data-theme="midnight"]{
+  --portfolio-cursor:url('/cursors/midnight.svg') 4 4;
   --paper:#161814;
   --paper-2:#1E211C;
   --paper-3:#282C25;
@@ -131,6 +133,16 @@ html[data-theme="midnight"] .grain{mix-blend-mode:screen}
 .tog i::after{content:'';position:absolute;top:1px;bottom:1px;left:1px;width:10px;
   background:currentColor;transition:transform 320ms var(--ease)}
 html[data-theme="midnight"] .tog i::after{transform:translateX(12px)}
+
+/* Magazine-style outline cursor, with a contrasting edge over photographs. */
+@media (hover:hover) and (pointer:fine){
+  html,body{cursor:var(--portfolio-cursor),auto}
+  a,button,.tog,[role="button"],summary{
+    cursor:var(--portfolio-cursor),pointer;
+  }
+  input,textarea,[contenteditable="true"]{cursor:text}
+  :disabled,[aria-disabled="true"]{cursor:not-allowed}
+}
 
 /* section head — folio system */
 .folio{
