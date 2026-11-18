@@ -6,8 +6,20 @@ import ThemeProvider from "./components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Chamodi Karunarathne — Software Engineer",
-  description:
-    "Chamodi Karunarathne — full-stack engineer and PCB designer. Enterprise systems, real-time telemetry, and the hardware underneath them.",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
+  description:"I'm a Software Engineering Intern specializing in full-stack engineering and digital experiences",
+  openGraph: {
+    title:
+      "Chamodi Karunarathne — Software Engineer",
+    description:
+      "I'm a Software Engineering Intern specializing in full-stack engineering and digital experiences",    images: [
+      {
+        url: "/my-pic.jpg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
