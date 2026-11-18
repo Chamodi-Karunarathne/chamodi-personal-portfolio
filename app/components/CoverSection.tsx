@@ -1,3 +1,5 @@
+import TypingNameplate from "./TypingNameplate";
+
 export default function CoverSection() {
   return (
     <section className="cover" data-section="The Cover">
@@ -9,10 +11,7 @@ export default function CoverSection() {
         <span className="label" style={{ marginLeft: 'auto' }}>MMXXVI</span>
       </div>
 
-      <h1 className="nameplate">
-        <span className="l"><span>Chamodi</span></span>
-        <span className="l"><span>Karunarathne</span></span>
-      </h1>
+      <TypingNameplate />
       <hr className="hair cover__hair" />
 
       <div className="cover__body">

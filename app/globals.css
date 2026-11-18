@@ -172,8 +172,23 @@ html[data-theme="midnight"] .tog i::after{transform:translateX(12px)}
   text-transform:uppercase;text-align:center;
   margin:0 0 var(--s2);
 }
-.nameplate .l{display:block;overflow:hidden}
+.nameplate .l{display:block;overflow:hidden;position:relative}
 .nameplate .l>span{display:block}
+.nameplate__reserve{visibility:hidden}
+.nameplate__typed{position:absolute;inset:0;display:block}
+.nameplate--refocus .nameplate__typed{animation:refocus .8s ease-out}
+@keyframes refocus{
+  0%{filter:blur(0);opacity:1}
+  30%{filter:blur(6px);opacity:.4;transform:scale(1.01)}
+  100%{filter:blur(0);opacity:1;transform:scale(1)}
+}
+.typing-cursor{
+  display:inline-block;width:.04em;height:.78em;
+  background:var(--ink);vertical-align:baseline;
+  margin-left:.02em;
+  animation:blink .6s step-end infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .cover__hair{margin-bottom:var(--s7)}
 
 .cover__body{
