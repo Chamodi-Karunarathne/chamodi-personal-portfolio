@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const FIRST = "Chamodi";
 const LAST = "Karunarathne";
@@ -9,19 +9,12 @@ const CHAR_DELAY = 110; // ms per character
 export default function TypingNameplate() {
   const [firstCount, setFirstCount] = useState(0);
   const [lastCount, setLastCount] = useState(0);
-  const [doneTyping, setDoneTyping] = useState(false);
-  const [blurring, setBlurring] = useState(false);
-  const animatingRef = useRef(false);
 
-  const runTyping = useCallback(() => {
-    if (animatingRef.current) return;
-    animatingRef.current = true;
-
-    setFirstCount(0);
-    setLastCount(0);
-
+  // Type on mount
+  useEffect(() => {
     let i = 0;
     const total = FIRST.length + LAST.length;
+    let timer: ReturnType<typeof setTimeout>;
 
     const tick = () => {
       i++;
@@ -31,44 +24,17 @@ export default function TypingNameplate() {
         setLastCount(i - FIRST.length);
       }
       if (i < total) {
-        setTimeout(tick, CHAR_DELAY);
-      } else {
-        animatingRef.current = false;
-        setDoneTyping(true);
+        timer = setTimeout(tick, CHAR_DELAY);
       }
     };
 
-    setTimeout(tick, CHAR_DELAY);
+    timer = setTimeout(tick, CHAR_DELAY);
+
+    return () => clearTimeout(timer);
   }, []);
 
-  // Type on mount
-  useEffect(() => {
-    runTyping();
-  }, [runTyping]);
-
-  // Hover → blur/refocus effect (only after initial typing is done)
-  const handleMouseEnter = () => {
-    if (!doneTyping || blurring) return;
-    setBlurring(true);
-  };
-
-  const handleAnimationEnd = () => {
-    setBlurring(false);
-  };
-
-  const nameplateClass = [
-    "nameplate",
-    blurring ? "nameplate--refocus" : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
-
   return (
-    <h1
-      className={nameplateClass}
-      onMouseEnter={handleMouseEnter}
-      onAnimationEnd={handleAnimationEnd}
-    >
+    <h1 className="nameplate">
       {/* Line 1 */}
       <span className="l">
         <span aria-hidden="true" className="nameplate__reserve">
